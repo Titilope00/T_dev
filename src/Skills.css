@@ -1,0 +1,138 @@
+*{
+  font-family: monospace;
+}
+.skills {
+  text-align: center;
+  /* z-index: 1000; */
+}
+
+.skill-circle {
+  justify-content: center;
+  padding: 16px 0;
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  /* justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around; */
+}
+.container h2{
+  color: #f013bc;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 20px;
+  border: 3px solid  red;
+}
+
+.inner-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.inner-circle i{
+  color: white;
+  font-size: 46px;
+  margin-top: 16px;
+}
+/* Colors for the borders */
+.circle:nth-child(1) {
+  border-color: #f013bc; /* Tomato */
+}
+
+.circle:nth-child(2) {
+  border-color: white; /* Steel Blue */
+}
+
+.circle:nth-child(3) {
+  border-color: #f013bc; /* Lime Green */
+}.circle:nth-child(4) {
+  border-color: white; /* Tomato */
+}
+
+.circle:nth-child(5) {
+  border-color: #f013bc; /* Steel Blue */
+}
+
+.circle:nth-child(6){
+  border-color: white;
+}
+.circle:nth-child(7) {
+  border-color: #f013bc; /* Lime Green */
+}
+
+/* Colors for the inner circles */
+.inner-circle:nth-child(1) {
+  background-color: rgba(58, 55, 55, 0.7); /* Transparent Tomato */
+}
+
+.inner-circle:nth-child(2) {
+  background-color: rgba(58, 55, 55, 0.7)
+}
+
+.inner-circle:nth-child(3) {
+  background-color: rgba(58, 55, 55, 0.7); /* Transparent Lime Green */
+}
+
+.project-3d {
+  width: 270px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin: 20px;
+}
+
+.project-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(58, 55, 55, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  transform: rotateY(0deg);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #f013bc;
+  border-radius: 8px;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-3d:hover .project-content {
+  transform: rotateY(180deg);
+}
+.project-content h2{
+  color: white;
+}
+.project-3d:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 8px;
+}
+
+@media(max-width:490px){
+  .skill-circle{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+   
+  }
+}

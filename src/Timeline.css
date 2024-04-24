@@ -1,0 +1,45 @@
+.title{
+  margin: 46px auto;
+}
+  /* Styling for each timeline element */
+  .vertical-timeline-element {
+    background-color: #f8f7f7; /* White background */
+    color: #000000; /* Dark text color */
+    padding: 10px; /* Spacing between content and edges */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 6px #f013bc; /* Soft shadow */
+    margin-bottom: 10px; /* Spacing between timeline elements */
+  }
+  
+  /* Styling for the date section */
+  .vertical-timeline-element-date {
+    font-size: 16px; /* Date font size */
+    font-weight: bold; /* Date font weight */
+    margin-bottom: 10px; /* Spacing between date and content */
+    color: #000000;
+  }
+  
+  /* Styling for the icon */
+  .vertical-timeline-element-icon {
+    border-radius: 50%; /* Circular shape */
+    font-size: 22px;
+    padding: 10px; /* Padding around the icon */
+  }
+  
+  /* Styling for the title */
+  .vertical-timeline-element-title {
+    font-size: 18px; /* Title font size */
+    margin-bottom: 10px; /* Spacing between title and content */
+  }
+  
+  /* Styling for the content */
+  .vertical-timeline-element-content {
+    font-size: 16px; /* Content font size */
+    line-height: 1.6; /* Line height for readability */
+  }
+  
+  /* Styling for the content arrow */
+  .vertical-timeline-element::before {
+    border-right-color: #fff; /* Color of the content arrow */
+  }
+  

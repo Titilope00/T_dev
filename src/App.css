@@ -1,0 +1,17 @@
+/* .App{
+    text-align: center;
+    z-index: 1000;
+    top: 18px;
+  left: 50%;
+  position: absolute;
+} */
+/* #navbar{
+    z-index: -1;
+    position:absolute;
+} */
+.App{
+  position: relative;
+}
+.components{
+position: absolute;
+}

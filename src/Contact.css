@@ -1,0 +1,198 @@
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    /* z-index: 0; */
+    position: relative;
+    /* bottom: 18%; */
+    left: 10%;
+    color: white;
+    border-radius: 60px 0;
+    box-shadow: 2px 1px 2px 1px #f013bc;
+    background: rgba(58, 55, 55, 0.7);
+    width: calc(90% - 30px);
+    align-items: center;
+    backdrop-filter: blur(10px);
+    margin-bottom: 50px ;
+  }
+  
+  .contact-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-content  h2{
+    color: white;
+    font-size: 24px;
+  }
+  .contact-model {
+    margin-left: 100px;
+    flex: 1;
+    perspective: 800px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 14px; /* Adjust as needed */
+  }
+  
+  .form-group label {
+    color: white;
+    font-size: 17px;
+    flex: 0 0 auto; /* Allow labels to shrink to fit content */
+    margin-right: 17px; /* Adjust as needed */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    flex: 1; 
+  }
+  
+  .form-group input{
+    border: 1px solid #f013bc;
+    padding: 10px 38px;
+    color: white;
+    background: black;
+  }
+
+  textarea {
+    border: 1px solid #f013bc;
+    color: white;
+    background: black;
+    padding: 35px 18px;
+    width: 69%;
+    resize: none; /* Disable textarea resizing */
+  }
+ 
+  .required-label, .required-label1{
+  margin-right: 17px;
+  position: relative; /* Make the label positioned relatively */
+}
+
+.required-label::after {
+  content: "*"; /* Content is an asterisk */
+  color: red; /* or any other color */
+  position: absolute; /* Position absolutely */
+  top: -0.3em; /* Adjust as needed to position the asterisk */
+  left: 45px; /* Adjust as needed to position the asterisk */
+}
+.required-label1::after{
+  content: "*"; /* Content is an asterisk */
+  color: red; /* or any other color */
+  position: absolute; /* Position absolutely */
+  top: -0.3em; /* Adjust as needed to position the asterisk */
+  left: 64px;
+}
+  button{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    padding: 13px 0;
+    margin: 18px 9px;
+    color: #fff;
+    border-radius: 15px 0;
+    border: 3px solid #f013bc;
+    text-align: center;
+    font-size: 20px;
+    background: black;
+  }
+  button:hover, button::after{
+    border: 3px solid white;
+    transition: 1s ease-in-out;
+    background-color: #f013bc;
+  }
+
+
+  .icon i{
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    box-shadow: 2px 1px 2px 1px white;
+    background-color: black;
+    margin-top: 22px;
+    padding: 7px;
+    }
+    .icon i:hover,.icons i::after{
+      color: black;
+      background-color: white;  
+    }
+    .icon{
+      display:flex;
+      flex-direction: row;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 9px;
+      box-shadow: 2px 1px 2px 1px white;
+      backdrop-filter: blur(10px);
+      margin: 5px;
+      cursor: pointer;
+    }
+
+  .cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+  }
+  
+  .cube div {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    height: 200px;
+    background-color: #f013bc;
+    border: 1px solid #333;
+  }
+  
+  .front {
+    transform: translateZ(100px);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @media(max-width:490px){
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      /* text-align: left; */
+    }
+  }
